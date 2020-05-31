@@ -36,7 +36,7 @@ _addPreCommitConfig:
   rev: $(YELP_VERSION)\n\
   hooks:\n\
   - id: detect-secrets\n\
-  	args: ['--baseline', '.secrets.baseline']\n\
+    args: ['--baseline', '.secrets.baseline']\n\
     exclude: .*/tests/.*\n\
 " >$(PRE_COMMIT_CONFIG_FILE)
 
